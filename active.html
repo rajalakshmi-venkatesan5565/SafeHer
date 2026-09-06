@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeHer - Journey Active</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="mobile">
+
+    <div class="journey-page">
+
+        <!-- HEADER -->
+        <div class="journey-header">
+
+            <i class="fa-solid fa-arrow-left"
+               onclick="history.back()"
+               style="cursor:pointer;"></i>
+
+            <h3>Journey Active</h3>
+
+        </div>
+
+        <!-- DESTINATION CARD -->
+        <div class="journey-card">
+
+            <div class="journey-info">
+
+                <p>On the way to</p>
+
+                <h2 id="destinationName">
+                    Destination
+                </h2>
+
+            </div>
+
+            <i class="fa-solid fa-pen"
+               onclick="window.location.href='timer.html'"
+               style="cursor:pointer;"></i>
+
+        </div>
+
+        <!-- TIMER -->
+        <div class="timer-box">
+
+            <p>Time Remaining</p>
+
+            <h1 id="timer">
+                00 : 45 : 30
+            </h1>
+
+            <span>HH : MM : SS</span>
+
+        </div>
+
+        <!-- SAFE BUTTON -->
+        <button
+            class="safe-btn"
+            onclick="journeyCompleted()">
+
+            ✓ I've Reached Safely
+
+        </button>
+
+        <!-- EXTEND TIMER -->
+        <button
+            class="safe-btn red"
+            onclick="window.location.href='extend.html'">
+
+            Extend Timer
+
+        </button>
+
+    </div>
+
+</div>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>

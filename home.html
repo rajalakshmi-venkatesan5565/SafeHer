@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SafeHer - Home</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="mobile">
+
+    <div class="home-page">
+
+        <!-- Header -->
+
+        <div class="home-header">
+
+            <img src="images/logo.png"
+                 class="home-logo"
+                 alt="SafeHer Logo">
+
+            <div class="welcome">
+
+                <h4>Welcome</h4>
+
+                <!-- Dynamic Username -->
+                <h2 id="userName">
+                    User 👋
+                </h2>
+
+            </div>
+
+        </div>
+
+        <!-- SOS -->
+
+        <div class="sos-container">
+
+            <button class="sos-btn"
+                    onclick="window.location.href='sos.html'">
+
+                SOS
+
+            </button>
+
+            <p>Tap in Emergency</p>
+
+        </div>
+
+        <!-- Safe Journey -->
+
+        <div class="timer-card"
+             onclick="window.location.href='timer.html'"
+             style="cursor:pointer;">
+
+            <div class="timer-left">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <span>Set Timer for Safe Journey</span>
+
+            </div>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script type="module" src="script.js"></script>
+
+</body>
+
+</html>

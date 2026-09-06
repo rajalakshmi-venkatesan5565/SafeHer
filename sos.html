@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOS Active</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="mobile">
+
+<div class="sos-pro">
+
+    <!-- TOP -->
+    <div class="sos-top-pro">
+
+        <i class="fa-solid fa-arrow-left"
+           onclick="history.back()"
+           style="cursor:pointer;"></i>
+
+        <h3>Emergency Mode</h3>
+
+    </div>
+
+    <!-- HERO -->
+    <div class="sos-hero">
+
+        <div class="sos-icon-ring">
+
+            <div class="sos-icon">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+
+        </div>
+
+        <h2>SOS ACTIVATED</h2>
+
+        <p>Select a contact to send an SOS alert.</p>
+
+    </div>
+
+    <!-- EMERGENCY CONTACTS -->
+
+    <div class="sos-status-pro">
+
+        <h3 style="margin-bottom:15px;">Emergency Contacts</h3>
+
+        <div id="emergencyContacts">
+
+            <!-- Contacts will appear here automatically -->
+
+        </div>
+
+    </div>
+
+    <!-- ACTIONS -->
+
+    <div class="action-title-pro">
+
+        Quick Emergency Actions
+
+    </div>
+
+    <div class="actions-pro">
+
+        <div class="action-pro-card"
+             onclick="callWomenHelpline()"
+             style="cursor:pointer;">
+
+            <i class="fa-solid fa-phone"></i>
+
+            <p>Women Helpline</p>
+
+            <span>1091</span>
+
+        </div>
+
+        <div class="action-pro-card"
+             onclick="callPolice()"
+             style="cursor:pointer;">
+
+            <i class="fa-solid fa-shield"></i>
+
+            <p>Police</p>
+
+            <span>100</span>
+
+        </div>
+
+    </div>
+
+    <!-- CANCEL -->
+
+    <button class="cancel-pro"
+            onclick="cancelSOS()">
+
+        Cancel Emergency
+
+    </button>
+
+    <p class="note-pro">
+
+        Auto-cancels when safe
+
+    </p>
+
+</div>
+
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>

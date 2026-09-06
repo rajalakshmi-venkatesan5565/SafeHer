@@ -1,0 +1,1198 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#EDE7F6;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+/* ================= MOBILE FRAME ================= */
+
+.mobile{
+    width:360px;
+    height:620px;
+    background:white;
+    border-radius:35px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.18);
+    position:relative;
+}
+
+/* ================= STATUS BAR ================= */
+
+.status-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    font-size:15px;
+    font-weight:600;
+}
+
+.status-icons i{
+    margin-left:8px;
+}
+
+/* ================= SPLASH PAGE ================= */
+
+.splash{
+    height:calc(100% - 50px);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.logo{
+    width:180px;
+    margin-top:70px;
+}
+
+.splash h1{
+    font-size:48px;
+    margin-top:20px;
+    font-weight:700;
+    background:linear-gradient(90deg,#4A00E0,#FF3CAC);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.splash p{
+    color:#777;
+    margin-top:8px;
+    font-size:17px;
+}
+
+#startBtn{
+    margin-top:auto;
+    margin-bottom:35px;
+    width:85%;
+    height:58px;
+    border:none;
+    border-radius:16px;
+    background:linear-gradient(90deg,#5E35B1,#D81B60);
+    color:white;
+    font-size:20px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#startBtn:hover{
+    transform:scale(1.03);
+}
+
+/* ================= REGISTER PAGE ================= */
+
+.register-page{
+    height:100%;
+    padding:30px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.small-logo{
+    width:70px;
+}
+
+.register-page h2{
+    margin-top:10px;
+    color:#5E35B1;
+    font-size:28px;
+}
+
+.register-page p{
+    color:gray;
+    margin-bottom:20px;
+}
+
+.profile-circle{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:#EFE7FF;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:20px;
+    cursor:pointer;
+}
+
+.profile-circle i{
+    font-size:40px;
+    color:#7B2FF7;
+}
+
+.register-page input{
+    width:100%;
+    height:50px;
+    margin-bottom:15px;
+    border:none;
+    background:#F5F5F5;
+    border-radius:12px;
+    padding-left:18px;
+    font-size:15px;
+    outline:none;
+}
+
+.register-page input:focus{
+    border:2px solid #7B2FF7;
+    background:white;
+}
+
+.add-btn{
+    width:100%;
+    height:48px;
+    border:2px dashed #7B2FF7;
+    background:white;
+    color:#7B2FF7;
+    border-radius:12px;
+    margin-bottom:20px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+#continueBtn{
+    width:100%;
+    height:55px;
+    border:none;
+    border-radius:14px;
+    background:linear-gradient(90deg,#5E35B1,#D81B60);
+    color:white;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+/* ================= PERMISSION PAGE ================= */
+
+.permission-page{
+    padding:30px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    height:100%;
+}
+
+.permission-page h2{
+    margin-top:15px;
+    color:#5E35B1;
+}
+
+.permission-page p{
+    color:gray;
+    margin-bottom:25px;
+    text-align:center;
+}
+
+.permission-card{
+    width:100%;
+    background:#F7F7F7;
+    padding:15px;
+    border-radius:12px;
+    margin-bottom:15px;
+    font-size:15px;
+}
+
+.permission-card span{
+    font-size:13px;
+    color:#666;
+}
+
+#allowBtn{
+    margin-top:auto;
+    width:100%;
+    height:55px;
+    border:none;
+    border-radius:15px;
+    background:linear-gradient(90deg,#5E35B1,#D81B60);
+    color:white;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+/* ================= HOME (simple version) ================= */
+
+/* ================= HOME PAGE ================= */
+
+/* ================= HOME PAGE ================= */
+
+.home-page{
+    height:100%;
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+}
+
+/* Header */
+
+.home-header{
+    display:flex;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.home-logo{
+    width:65px;
+    height:65px;
+    object-fit:contain;
+    margin-right:15px;
+}
+
+.welcome h4{
+    font-size:16px;
+    color:#7B2FF7;
+    font-weight:600;
+    letter-spacing:.5px;
+}
+
+.welcome h2{
+    font-size:24px;
+    color:#4A148C;
+    font-weight:700;
+    margin-top:3px;
+}
+
+/* SOS Section */
+
+.sos-container{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.sos-btn{
+    width:210px;
+    height:210px;
+
+    border-radius:50%;
+    border:12px solid rgba(37,99,235,0.18);
+
+    /* layered premium red */
+    background:
+        radial-gradient(circle at 30% 30%,
+            #ffb3b3 0%,
+            #ff4d4d 35%,
+            #d10000 70%,
+            #7a0000 100%
+        );
+
+    color:white;
+    font-size:58px;
+    font-weight:900;
+    letter-spacing:2px;
+
+    cursor:pointer;
+
+    position:relative;
+    z-index:1;
+
+    /* deep realistic shadow */
+    box-shadow:
+        0 18px 40px rgba(0,0,0,0.18),
+        inset 0 6px 15px rgba(255,255,255,0.25),
+        inset 0 -10px 20px rgba(0,0,0,0.25);
+
+    transition:all 0.25s ease;
+
+    animation:softPulse 2.4s infinite;
+}
+
+/* outer safety glow ring */
+.sos-btn::before{
+    content:"";
+    position:absolute;
+    top:-18px;
+    left:-18px;
+    right:-18px;
+    bottom:-18px;
+
+    border-radius:50%;
+
+    background:rgba(37,99,235,0.12);
+
+    z-index:-1;
+
+    animation:ringPulse 2.4s infinite;
+}
+
+/* hover */
+.sos-btn:hover{
+    transform:scale(1.06);
+}
+
+/* click */
+.sos-btn:active{
+    transform:scale(0.96);
+}
+
+/* soft breathing animation */
+@keyframes softPulse{
+    0%{
+        box-shadow:
+            0 18px 40px rgba(0,0,0,0.18),
+            0 0 0 0 rgba(255,77,77,0.25),
+            inset 0 6px 15px rgba(255,255,255,0.25),
+            inset 0 -10px 20px rgba(0,0,0,0.25);
+    }
+
+    70%{
+        box-shadow:
+            0 18px 40px rgba(0,0,0,0.18),
+            0 0 0 20px rgba(255,77,77,0),
+            inset 0 6px 15px rgba(255,255,255,0.25),
+            inset 0 -10px 20px rgba(0,0,0,0.25);
+    }
+
+    100%{
+        box-shadow:
+            0 18px 40px rgba(0,0,0,0.18),
+            0 0 0 0 rgba(255,77,77,0),
+            inset 0 6px 15px rgba(255,255,255,0.25),
+            inset 0 -10px 20px rgba(0,0,0,0.25);
+    }
+}
+
+/* outer ring animation */
+@keyframes ringPulse{
+    0%{
+        transform:scale(0.95);
+        opacity:0.8;
+    }
+    70%{
+        transform:scale(1.15);
+        opacity:0;
+    }
+    100%{
+        transform:scale(1.15);
+        opacity:0;
+    }
+}
+
+/* hover effect */
+.sos-btn:hover{
+    transform:scale(1.05);
+}
+
+/* click effect */
+.sos-btn:active{
+    transform:scale(0.97);
+}
+
+/* hover effect */
+.sos-btn:hover{
+    transform:scale(1.05);
+}
+
+/* click effect */
+.sos-btn:active{
+    transform:scale(0.97);
+}
+
+.sos-btn:hover{
+    transform:scale(1.05);
+}
+
+.sos-btn:active{
+    transform:scale(.97);
+}
+
+@keyframes pulse{
+
+    0%{
+        box-shadow:
+        0 0 0 0 rgba(255,65,108,.35),
+        0 18px 35px rgba(213,0,50,.30);
+    }
+
+    70%{
+        box-shadow:
+        0 0 0 22px rgba(255,65,108,0),
+        0 18px 35px rgba(213,0,50,.30);
+    }
+
+    100%{
+        box-shadow:
+        0 0 0 0 rgba(255,65,108,0),
+        0 18px 35px rgba(213,0,50,.30);
+    }
+
+}
+
+.sos-container p{
+    margin-top:28px;
+    font-size:16px;
+    color:#666;
+    font-weight:500;
+}
+
+/* Timer Card */
+
+.timer-card{
+
+    width:100%;
+
+    background:#F5F0FF;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    margin-bottom:10px;
+}
+
+.timer-card:hover{
+    background:#EEE4FF;
+}
+
+.timer-left{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.timer-left i{
+    color:#6A1B9A;
+    font-size:22px;
+}
+
+.timer-left span{
+    color:#333;
+    font-size:15px;
+    font-weight:600;
+}
+
+.timer-card .fa-chevron-right{
+    color:#6A1B9A;
+}
+/* ================= TIMER PAGE ================= */
+
+.timer-page{
+    padding:22px;
+    display:flex;
+    flex-direction:column;
+    height:100%;
+
+    justify-content:flex-start; /* important fix */
+}
+/* HEADER */
+
+.timer-header{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:25px;
+}
+
+.timer-header i{
+    font-size:20px;
+    color:#4A148C;
+    cursor:pointer;
+}
+
+.timer-header h3{
+    font-size:18px;
+    color:#333;
+    font-weight:600;
+}
+
+/* INPUT BOX */
+
+.input-box{
+    margin-bottom:20px;
+}
+
+.input-box label{
+    font-size:15px;
+    color:#777;
+    display:block;
+    margin-bottom:8px;
+}
+
+.input-field{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    background:#F6F0FF;
+    padding:14px;
+    border-radius:14px;
+}
+
+.input-field i{
+    color:#6A1B9A;
+}
+
+.input-field input{
+    border:none;
+    outline:none;
+    background:transparent;
+    width:100%;
+    font-size:16px;
+}
+
+/* QUICK TIMER */
+
+.quick-timer p{
+    font-size:15px;
+    color:#777;
+    margin-bottom:10px;
+}
+
+.time-options{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+}
+
+.time-options button{
+    padding:10px;
+    border:none;
+    border-radius:12px;
+    background:#eee;
+    cursor:pointer;
+    font-size:15px;
+    transition:.2s;
+}
+
+.time-options button.active{
+    background:#6C63FF;
+    color:white;
+}
+
+/* START BUTTON */
+
+.start-btn{
+    margin-top:65px;
+
+    padding:15px;
+    border:none;
+    border-radius:14px;
+
+    background:linear-gradient(90deg,#5E35B1,#D81B60);
+
+    color:white;
+    font-size:18px;
+    font-weight:600;
+
+    cursor:pointer;
+    transition:.2s;
+}
+
+.start-btn:hover{
+    transform:scale(1.02);
+}
+/* ================= JOURNEY ACTIVE PAGE ================= */
+
+/* ================= JOURNEY ACTIVE PREMIUM UI ================= */
+
+/* ================= JOURNEY ACTIVE FINAL PREMIUM ================= */
+
+.journey-page{
+    padding:24px;
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    background:#FAFAFF;
+}
+
+/* HEADER (BIGGER TEXT) */
+
+.journey-header{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:20px;
+}
+
+.journey-header i{
+    font-size:20px;
+    color:#6C63FF;
+}
+
+.journey-header h3{
+    font-size:20px;
+    font-weight:800;
+    color:#222;
+}
+
+/* DESTINATION CARD */
+
+.journey-card{
+    background:linear-gradient(135deg,#F6F0FF,#FFFFFF);
+    padding:20px;
+    border-radius:18px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:20px;
+
+    border:1px solid rgba(108,99,255,0.15);
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.06);
+}
+
+.journey-info p{
+    font-size:14px;
+    color:#888;
+}
+
+.journey-info h2{
+    font-size:22px;
+    color:#4A148C;
+    font-weight:800;
+}
+
+.journey-card i{
+    color:#6C63FF;
+    font-size:18px;
+}
+
+/* TIMER BOX (BIG TEXT) */
+
+.timer-box{
+    text-align:center;
+
+    background:linear-gradient(180deg,#ffffff,#F8F7FF);
+
+    padding:30px 20px;
+    border-radius:20px;
+
+    border:1px solid rgba(0,0,0,0.06);
+
+    margin-bottom:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+.timer-box p{
+    color:#888;
+    font-size:15px;
+}
+
+.timer-box h1{
+    font-size:38px;
+    color:#222;
+    margin:12px 0;
+
+    letter-spacing:2px;
+    font-weight:850;
+}
+
+.timer-box span{
+    font-size:13px;
+    color:#999;
+}
+
+/* GREEN SAFE BUTTON (BIGGER TEXT) */
+
+.safe-btn{
+    padding:16px;
+    border:none;
+    border-radius:14px;
+
+    background:linear-gradient(135deg,#2ecc71,#27ae60);
+
+    color:white;
+    font-size:17px;
+    font-weight:800;
+
+    cursor:pointer;
+
+    box-shadow:0 10px 20px rgba(46,204,113,0.25);
+
+    transition:0.2s ease;
+}
+
+/* 🔴 NEW RED ALERT BOX STYLE */
+.safe-btn.red{
+    background:linear-gradient(135deg,#ff4d4d,#c40000);
+    box-shadow:0 10px 20px rgba(255,0,0,0.25);
+}
+
+.safe-btn:hover{
+    transform:scale(1.03);
+}
+
+.safe-btn:active{
+    transform:scale(0.97);
+}
+
+/* HELP TEXT (BIGGER) */
+
+.help-text{
+    text-align:center;
+    margin-top:14px;
+
+    color:#6C63FF;
+    font-weight:700;
+    font-size:15px;
+
+    cursor:pointer;
+}
+/* ================= SOS SCREEN ================= */
+
+/* ================= CLEAN SOS UI ================= */
+
+/* ================= SOS PRO UI ================= */
+
+/* ================= SIMPLE SOS UI ================= */
+
+/* ================= SOS PRO UI ================= */
+
+.sos-pro{
+    padding:16px;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    background:#f6f7fb;
+}
+
+/* TOP */
+
+.sos-top-pro{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:16px;
+    font-weight:700;
+    color:#222;
+}
+
+.sos-top-pro i{
+    color:#6C63FF;
+}
+
+/* HERO */
+
+.sos-hero{
+    text-align:center;
+    margin:8px 0 15px;
+}
+.sos-icon-ring{
+
+    width:85px;
+    height:85px;
+
+    margin:0 auto 8px;
+
+    border-radius:50%;
+
+    background:rgba(255,59,59,.08);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.sos-icon{
+
+    width:58px;
+    height:58px;
+
+    border-radius:50%;
+
+    background:#ff3b3b;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    font-size:28px;
+}
+
+.sos-hero h2{
+
+    font-size:22px;
+    margin:6px 0 2px;
+
+}
+.sos-hero p{
+
+    font-size:12px;
+    color:#666;
+    margin-bottom:8px;
+
+}
+
+/* STATUS */
+
+/* ================= STATUS ROW PREMIUM ================= */
+
+.sos-status-pro{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:12px;
+
+    margin-bottom:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+}
+
+/* EACH ROW */
+.status-pro{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:12px 10px;
+    margin-bottom:10px;
+
+    border-radius:14px;
+
+    background:#f8f9ff;
+}
+
+/* LEFT ICON CIRCLE */
+.status-pro i{
+    width:34px;
+    height:34px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:10px;
+
+    font-size:14px;
+
+    color:#fff;
+}
+
+/* ICON COLORS (DIFFERENT FOR EACH TYPE) */
+.status-pro:nth-child(1) i{
+    background:#6C63FF; /* SMS */
+}
+
+.status-pro:nth-child(2) i{
+    background:#3b82f6; /* Location */
+}
+
+.status-pro:nth-child(3) i{
+    background:#22c55e; /* Contacts */
+}
+
+/* TEXT AREA */
+.status-pro h4{
+    font-size:13px;
+    font-weight:700;
+    margin:0;
+    color:#222;
+}
+
+.status-pro span{
+    font-size:11px;
+    color:#888;
+}
+
+/* RIGHT STATUS BADGE */
+.ok{
+    background:#dcfce7;
+    color:#16a34a;
+
+    font-size:11px;
+    font-weight:800;
+
+    padding:4px 8px;
+    border-radius:20px;
+}
+
+.live{
+    background:#dbeafe;
+    color:#2563eb;
+
+    font-size:11px;
+    font-weight:800;
+
+    padding:4px 8px;
+    border-radius:20px;
+}
+
+/* ACTION TITLE */
+
+.action-title-pro{
+    margin-top:10px;
+    font-size:13px;
+    font-weight:700;
+    color:#555;
+}
+
+/* ACTION CARDS */
+
+.actions-pro{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    margin-top:10px;
+}
+
+.action-pro-card{
+    background:white;
+    border-radius:16px;
+    padding:16px;
+    text-align:center;
+    box-shadow:0 6px 15px rgba(0,0,0,0.05);
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.action-pro-card:hover{
+    transform:translateY(-3px);
+}
+
+.action-pro-card i{
+    font-size:12px;
+    color:#6C63FF;
+}
+
+.action-pro-card p{
+    font-size:12px;
+    margin:6px 0 2px;
+    font-weight:600;
+}
+
+.action-pro-card span{
+    font-size:11px;
+    color:#777;
+}
+
+/* CANCEL */
+
+.cancel-pro{
+    margin-top:15px;
+    padding:15px;
+    border:none;
+    border-radius:16px;
+    background:#ff3b3b;
+    color:white;
+    font-weight:800;
+    font-size:15px;
+    cursor:pointer;
+    box-shadow:0 10px 20px rgba(255,59,59,0.2);
+}
+
+.note-pro{
+    text-align:center;
+    font-size:11px;
+    color:#888;
+    margin-top:8px;
+}
+/* ---------- Extend Timer Screen ---------- */
+
+/* ================= EXTEND TIMER PAGE ================= */
+
+.extend-page{
+    padding:22px;
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    background:#FAFAFF;
+}
+
+.extend-title{
+    font-size:26px;
+    font-weight:700;
+    color:#4A148C;
+    margin-bottom:8px;
+}
+
+.extend-subtitle{
+    font-size:14px;
+    color:#777;
+    line-height:22px;
+    margin-bottom:25px;
+}
+
+/* Time Buttons */
+
+.time-options{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+    margin-bottom:25px;
+}
+
+.time-options button{
+    padding:14px;
+    border:none;
+    border-radius:14px;
+    background:#F3EDFF;
+    color:#5E35B1;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.25s;
+    box-shadow:0 4px 10px rgba(0,0,0,.05);
+}
+
+.time-options button:hover{
+    background:#5E35B1;
+    color:#fff;
+}
+
+.time-options button.active{
+    background:linear-gradient(90deg,#5E35B1,#D81B60);
+    color:white;
+}
+
+/* Input */
+
+.input-box{
+    margin-bottom:18px;
+}
+
+.input-box label{
+    display:block;
+    margin-bottom:8px;
+    color:#666;
+    font-size:15px;
+    font-weight:500;
+}
+
+.input-field{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:#F6F0FF;
+    border-radius:14px;
+    padding:14px;
+}
+
+.input-field i{
+    color:#6C63FF;
+    font-size:18px;
+}
+
+.input-field input{
+    border:none;
+    background:transparent;
+    outline:none;
+    width:100%;
+    font-size:15px;
+    color:#333;
+}
+
+/* Extend Button */
+
+.start-btn{
+    margin-top:auto;
+    width:100%;
+    height:55px;
+    border:none;
+    border-radius:15px;
+    background:linear-gradient(90deg,#5E35B1,#D81B60);
+    color:#fff;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.start-btn:hover{
+    transform:scale(1.02);
+    box-shadow:0 10px 20px rgba(94,53,177,.25);
+}
+/* ============================
+   Emergency Contact List
+============================ */
+
+.contact-card{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 0;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+.contact-card:last-child{
+
+    border-bottom:none;
+
+}
+
+.contact-card h4{
+
+    font-size:18px;
+
+    color:#222;
+
+    margin-bottom:5px;
+
+}
+
+.contact-card span{
+
+    font-size:14px;
+
+    color:#777;
+
+}
+
+.send-btn{
+
+    background:#25D366;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.send-btn:hover{
+
+    background:#1ebe5d;
+
+    transform:scale(1.05);
+
+}
+
+.send-btn i{
+
+    margin-right:5px;
+
+}

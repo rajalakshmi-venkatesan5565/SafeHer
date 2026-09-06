@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SafeHer - Extend Timer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="mobile">
+
+    <div class="extend-page">
+
+        <!-- Header -->
+
+        <div class="timer-header">
+
+            <i class="fa-solid fa-arrow-left"
+               onclick="history.back()"></i>
+
+            <h3>Extend Timer</h3>
+
+        </div>
+
+        <!-- Title -->
+
+        <h2 class="extend-title">
+            Need More Time?
+        </h2>
+
+        <p class="extend-subtitle">
+            Your journey is taking longer than expected.
+            Choose additional time below.
+        </p>
+
+        <!-- Time Options -->
+
+        <div class="time-options">
+
+            <button onclick="selectTime(this)">
+                +5 Minutes
+            </button>
+
+            <button onclick="selectTime(this)">
+                +10 Minutes
+            </button>
+
+            <button onclick="selectTime(this)">
+                +15 Minutes
+            </button>
+
+            <button onclick="selectTime(this)">
+                +30 Minutes
+            </button>
+
+        </div>
+
+        <!-- Custom Time -->
+
+        <div class="input-box">
+
+            <label>Custom Time (Optional)</label>
+
+            <div class="input-field">
+
+                <i class="fa-regular fa-clock"></i>
+
+                <input
+                    type="number"
+                    id="customTime"
+                    placeholder="Enter Minutes">
+
+            </div>
+
+        </div>
+
+        <!-- Reason -->
+
+        <div class="input-box">
+
+            <label>Reason (Optional)</label>
+
+            <div class="input-field">
+
+                <i class="fa-solid fa-pen"></i>
+
+                <input
+                    type="text"
+                    id="reason"
+                    placeholder="Traffic, Bus Delay...">
+
+            </div>
+
+        </div>
+
+        <!-- Button -->
+
+        <button
+            class="start-btn"
+            onclick="extendJourney()">
+
+            Extend Timer
+
+        </button>
+
+    </div>
+
+</div>
+
+<script type="module" src="script.js"></script>
+
+</body>
+
+</html>
